@@ -56,7 +56,8 @@ img {
 #img1 {
     display: block;
     margin: 30px auto;
-    max-width: 5%;
+    width: 150px;
     height: auto;
 }
+
 
