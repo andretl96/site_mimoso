@@ -1,259 +1,188 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Protocolo do Agrônomo Contratado</title>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<title>O que faz um candidato ser escolhido</title>
+
+<!-- Ícones -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
- <link rel="stylesheet" type="text/css" href="style.css">
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
 
+body{
+    font-family: Arial, sans-serif;
+    background:#f5f5f5;
+    margin:0;
+}
+
+/* ===== TÍTULO ===== */
+
+.titulo{
+    background:#b59c63;
+    padding:20px;
+    text-align:center;
+    font-size:28px;
+    font-weight:500;
+}
+
+/* ===== SEÇÃO ===== */
+
+.section{
+    padding:60px 20px;
+    max-width:1100px;
+    margin:auto;
+}
+
+/* ===== GRID ===== */
+
+.grid{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:25px;
+}
+
+/* ===== CARD QUADRADO ===== */
+
+.card{
+    background:white;
+    border-radius:14px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+    padding:25px 20px;
+
+    /* deixa quadrado */
+    aspect-ratio: 1 / 1;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+/* ===== CAIXA DO ÍCONE ===== */
+
+.icon-box{
+    width:95px;
+    height:95px;
+    background:#f1f1f1;
+    border-radius:16px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:18px;
+    border:1px solid #e5e5e5;
+}
+
+/* ===== ÍCONE GRANDE ===== */
+
+.icon-box i{
+    font-size:50px;
+    color:#b59c63;
+}
+
+/* ===== TEXTOS ===== */
+
+.card h3{
+    margin:10px 0 8px;
+    font-size:18px;
+}
+
+.card p{
+    font-size:14px;
+    color:#555;
+    margin:0;
+}
+
+/* ===== RESPONSIVO ===== */
+
+@media(max-width:900px){
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width:600px){
+    .grid{
+        grid-template-columns: 1fr;
+    }
+
+    .titulo{
+        font-size:22px;
+    }
+}
+
+</style>
 </head>
+
 <body>
 
-  <body>
-
-<!-- LOGO / TOPO -->
-<div class="container center">
-<img src="img/ini.png" alt="Logo" style="max-width:220px;">
+<div class="titulo">
+O que faz um candidato ser escolhido e aprovado em uma entrevista de emprego
 </div>
 
-<!-- BARRA DE DOR -->
-<div class="gold-bar">
-🔥 Tá cansado de mandar currículo e ninguém te chamar?
-</div>
+<section class="section">
 
-<!-- PROMESSA -->
-<div class="container center">
+<div class="grid">
 
-<h1>Como Conseguir e Passar em Entrevistas no Agro<br>
-Mesmo Sem Experiência ou Indicação</h1>
-
-<p>O método que transforma candidatos inseguros em profissionais contratados.</p>
-
-<img src="img/transformacao.png" alt="" style="max-width:700px;">
-
-<a href="#oferta" class="btn">QUERO SER APROVADO AGORA</a>
-
-</div>
-
-<!-- IMAGEM DE IDENTIFICAÇÃO -->
-<div class="container center">
-<img src="img/frustrado.png" alt="" style="max-width:600px;">
-</div>
-
-<!-- QUEBRA DE CRENÇA -->
-<div class="gold-bar">
-Mas CALMA aí… o problema NÃO está em você!
-</div>
-
-<!-- MÉTODO -->
-<div class="container center">
-
-<img src="img/metodo.png" alt="" style="max-width:700px;">
-
-<h2>O que faz um candidato ser escolhido em uma entrevista</h2>
-
-</div>
-
-<!-- PILARES -->
-<div class="section-light">
-<div class="container center">
-
-<section class="metodo">
-
-  <h2>O que faz um candidato ser escolhido e aprovado em uma entrevista de emprego</h2>
-
-  <div class="grid">
-
-    <div class="card">
-      <i class="fa-solid fa-magnifying-glass-chart"></i>
-      <h3>Diagnóstico do perfil</h3>
-      <p>Entenda exatamente porque seu currículo não avança</p>
-    </div>
-
-    <div class="card">
-      <i class="fa-solid fa-bullseye"></i>
-      <h3>Ajuste de posicionamento</h3>
-      <p>Alinha sua imagem ao que o recrutador procura</p>
-    </div>
-
-    <div class="card">
-      <i class="fa-solid fa-comments"></i>
-      <h3>Preparação para entrevistas</h3>
-      <p>Saiba o que responder e como responder</p>
-    </div>
-
-    <div class="card">
-      <i class="fa-solid fa-feather"></i>
-      <h3>Estrutura de narrativa</h3>
-      <p>Aprenda a contar sua história profissional</p>
-    </div>
-
-    <div class="card">
-      <i class="fa-solid fa-comment-dots"></i>
-      <h3>Leitura do recrutador</h3>
-      <p>Aprenda a interpretar o que está por trás de cada pergunta</p>
-    </div>
-
-    <div class="card">
-      <i class="fa-solid fa-shield-check"></i>
-      <h3>Decisão final</h3>
-      <p>Construa segurança para ser o escolhido</p>
-    </div>
-
+<!-- CARD 1 -->
+<div class="card">
+  <div class="icon-box">
+    <i class="fa-solid fa-clipboard-check"></i>
   </div>
+  <h3>Diagnóstico do perfil</h3>
+  <p>Entenda exatamente porque seu currículo não avança</p>
+</div>
+
+<!-- CARD 2 -->
+<div class="card">
+  <div class="icon-box">
+    <i class="fa-solid fa-bullseye"></i>
+  </div>
+  <h3>Ajuste de posicionamento</h3>
+  <p>Alinha sua imagem ao que o recrutador procura</p>
+</div>
+
+<!-- CARD 3 -->
+<div class="card">
+  <div class="icon-box">
+    <i class="fa-solid fa-comments"></i>
+  </div>
+  <h3>Preparação para entrevistas</h3>
+  <p>Saiba o que responder e como responder</p>
+</div>
+
+<!-- CARD 4 -->
+<div class="card">
+  <div class="icon-box">
+    <i class="fa-solid fa-feather"></i>
+  </div>
+  <h3>Estrutura de narrativa</h3>
+  <p>Aprenda a contar sua história profissional</p>
+</div>
+
+<!-- CARD 5 -->
+<div class="card">
+  <div class="icon-box">
+    <i class="fa-solid fa-user-tie"></i>
+  </div>
+  <h3>Leitura do recrutador</h3>
+  <p>Aprenda a interpretar o que está por trás de cada pergunta</p>
+</div>
+
+<!-- CARD 6 -->
+<div class="card">
+  <div class="icon-box">
+    <i class="fa-solid fa-shield-check"></i>
+  </div>
+  <h3>Decisão final</h3>
+  <p>Construa segurança para ser o escolhido</p>
+</div>
+
+</div>
 
 </section>
 
-<a href="#oferta" class="btn">QUERO ACESSO AO MÉTODO</a>
-
-</div>
-</div>
-
-<!-- BENEFÍCIOS -->
-<div class="container center">
-
-<h1>O que você vai conquistar:</h1>
-
-<div class="beneficios">
-<p><i class="fa-solid fa-circle-check"></i> Confiança real na entrevista</p>
-<p><i class="fa-solid fa-circle-check"></i> Clareza nas respostas</p>
-<p><i class="fa-solid fa-circle-check"></i> Diferencial competitivo</p>
-<p><i class="fa-solid fa-circle-check"></i> Mais convites para entrevistas</p>
-</div>
-
-<img src="img/05.png" alt="" style="max-width:500px;">
-
-<a href="#oferta" class="btn">QUERO ESSE RESULTADO</a>
-
-</div>
-
-<!-- CONTEÚDO -->
-<div class="section-light">
-<div class="container center">
-
-<h2>O Que Você Vai Receber:</h2>
-
-<p>Módulo 1 – Apresentações</p>
-<p>Módulo 2 – Como chegar na entrevista</p>
-<p>Módulo 3 – Currículo + mentalidade do RH</p>
-<p>Módulo 4 – Preparação completa</p>
-<p>Módulo 5 – A entrevista</p>
-<p>Módulo 6 – Pós-entrevista</p>
-
-</div>
-</div>
-
-<!-- BÔNUS -->
-<div class="container center">
-
-<h2>Bônus Exclusivos</h2>
-
-<p>Checklist da Entrevista Perfeita</p>
-<p>Modelo de Currículo Estratégico</p>
-<p>Guia rápido de Postura e Comunicação</p>
-
-</div>
-
-<!-- GARANTIA -->
-<div class="section-light">
-<div class="container center">
-
-<h2>Garantia Incondicional de 7 Dias</h2>
-<p>Se não gostar, devolvemos 100% do seu dinheiro.</p>
-
-</div>
-</div>
-
-<!-- OFERTA -->
-<div id="oferta" class="container">
-
-<div class="price-box">
-
-<h2>Investimento</h2>
-
-<p class="old-price">De R$ 1.185,00</p>
-
-<div class="big-price">12x de R$ 9,00</div>
-
-<p>ou R$ 87,00 à vista</p>
-
-<a href="#" class="btn">GARANTIR MEU ACESSO AGORA</a>
-
-</div>
-
-</div>
-
-<!-- FAQ -->
-<div class="section-light">
-<div class="container">
-
-<h2 class="center">Perguntas Frequentes</h2>
-
-<div class="faq-item">
-<h3>Preciso ter experiência?</h3>
-<p>Não. O método serve para iniciantes.</p>
-</div>
-
-<div class="faq-item">
-<h3>Funciona para recém-formados?</h3>
-<p>Sim, principalmente para primeiro emprego.</p>
-</div>
-
-</div>
-</div>
-
-<!-- CTA FINAL -->
-<div class="container center">
-
-<h2>A decisão que você tomar hoje pode definir seu futuro.</h2>
-
-<a href="#oferta" class="btn">QUERO SER CONTRATADO</a>
-
-</div>
-
-<footer>
-© 2026 Protocolo do Agrônomo Contratado
-</footer>
-
-</body>
-
-
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
