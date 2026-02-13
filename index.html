@@ -33,49 +33,43 @@
   margin-top:30px;
 }
 
-/* ===== NOVOS CARDS ===== */
-
-/* ===== GRID DE CARDS ALINHADO AO CONTAINER ===== */
+/* ===== GRID ESTÁVEL E ALINHADO ===== */
 
 .cards{
   display:grid;
 
-  /* ocupa TODA a largura disponível da div */
-  width:100%;
-  max-width:100%;
+  /* Desktop — 3 por linha */
+  grid-template-columns:repeat(3, 1fr);
 
-  grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
   gap:24px;
-
-  margin:40px auto 0;
+  margin-top:40px;
+  width:100%;
 }
 
 /* ===== CARD ===== */
 
 .card{
   background:#ffffff;
-  padding:25px 20px;
   border-radius:18px;
+  padding:28px 20px;
   text-align:center;
   box-shadow:0 10px 25px rgba(0,0,0,0.08);
 
-  aspect-ratio:1/1;
-
   display:flex;
   flex-direction:column;
-  justify-content:center;
   align-items:center;
+  justify-content:center;
 
-  width:100%; /* garante alinhamento */
+  height:240px; /* mantém todos iguais */
 }
 
 /* ===== ÍCONE ===== */
 
 .icon-box{
-  width:85px;
-  height:85px;
-  background:#f3f3f3;
-  border-radius:16px;
+  width:90px;
+  height:90px;
+  background:#f5f5f5;
+  border-radius:18px;
 
   display:flex;
   align-items:center;
@@ -86,7 +80,7 @@
 }
 
 .icon-box i{
-  font-size:40px;
+  font-size:42px;
   color:#b59c63;
 }
 
@@ -100,7 +94,22 @@
 .card p{
   font-size:14px;
   line-height:1.4;
-  max-width:220px;
+}
+
+/* ===== RESPONSIVO ===== */
+
+/* Tablet */
+@media (max-width:900px){
+  .cards{
+    grid-template-columns:repeat(2, 1fr);
+  }
+}
+
+/* Celular */
+@media (max-width:520px){
+  .cards{
+    grid-template-columns:1fr;
+  }
 }
 
 .beneficios p{
@@ -383,6 +392,7 @@ O que faz um candidato ser escolhido e aprovado em uma entrevista de emprego
 
 </body>
 </html>
+
 
 
 
