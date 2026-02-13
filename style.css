@@ -53,6 +53,17 @@ img {
     max-width: 100%;
     height: auto;
 }
+.beneficios p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.beneficios i {
+    color: #2ecc71;
+    margin-right: 10px;
+}
+
+
 
 
 
